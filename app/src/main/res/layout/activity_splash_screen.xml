@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_splash"
+    tools:context=".Ui.SplashScreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/github"
+        app:layout_constraintBottom_toTopOf="@id/github"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.05"
+        android:paddingBottom="10dp"
+        android:text="@string/github"
+        android:textAlignment="center"
+        android:textColor="@color/bright"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/letterU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/letter_U"
+        android:textColor="@color/bright"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/letterS"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@id/github"
+        app:layout_constraintTop_toBottomOf="@+id/github" />
+
+    <TextView
+        android:id="@+id/letterS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/letter_S"
+        android:textColor="@color/bright"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/letterE"
+        app:layout_constraintStart_toStartOf="@+id/letterU"
+        app:layout_constraintTop_toBottomOf="@+id/github" />
+
+    <TextView
+        android:id="@+id/letterE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/letter_E"
+        android:textColor="@color/bright"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/letterR"
+        app:layout_constraintStart_toStartOf="@+id/letterS"
+        app:layout_constraintTop_toBottomOf="@+id/github" />
+
+    <TextView
+        android:id="@+id/letterR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/letter_R"
+        android:textColor="@color/bright"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/github"
+        app:layout_constraintStart_toStartOf="@+id/letterE"
+        app:layout_constraintTop_toBottomOf="@+id/github" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
