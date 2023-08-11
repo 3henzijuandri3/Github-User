@@ -16,7 +16,7 @@ class ApiConfig {
             val client = OkHttpClient.Builder()
                 .addInterceptor { chain ->
                     val request = chain.request().newBuilder()
-                        .addHeader("Authorization", "token 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")
+                        .addHeader("Authorization", "token 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")
                         .build()
                     chain.proceed(request)
                 }
